@@ -4,156 +4,177 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MotherMade</title>
-    <link rel="stylesheet" href="/assignment/mothermade/styles.css">
+    <title>Our tours</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <header class="only-header flex">
-
-        <button 
-        class="mobile-nav-toggle" 
-        aria-controls="nav-list"
-        aria-expanded="false">
-        <
-        </button>
-
-     <nav>
-        <ul 
-        id="nav-list" 
-        data-visible="false" 
-        class="nav-list flex">
-    
-            <li>
-                <a href="#Home" class="nav-link">About</a>
-            </li>
-            <li>
-                <a href="#Menu" class="nav-link">Work</a>
-            </li>
-            <li>
-                <a href="#contact" class="nav-link">Contact</a>
-            </li>
-        </ul>
-     </nav>
+    <header id="home" class="only-header">
+<!-- ////nav bar//// -->
+        <nav id="nav">
+        <div class="nav-center">
+               <div class="nav-header">
+                <!-- logo -->
+                <a href="#" class="logo">next destination</a>
+                <!-- toggle -->
+                 <button class="nav-toggle">
+                  <i class="fa-solid fa-bars"></i> 
+                 </button>
+               </div>
+<!-- ////links//// -->
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li>
+                        <a href="#home" class="scroll-link">home</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="scroll-link">about</a>
+                    </li>
+                    <li>
+                        <a href="#reviews" class="scroll-link">reviews</a>
+                    </li>
+                    <li>
+                        <a href="#tour" class="scroll-link">tours</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="scroll-link">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </nav>
+<!-- ////banner//// -->
+    <div class="banner">
+        <div class="banner-container">
+            <h1>next destination</h1>
+            <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Dolor ea quidem labore architecto modi accusamus? Esse adipisci recusandae id.
+            Incidunt iste explicabo temporibus dignissimos architecto, in quos omnis similique veritatis.
+            </p>
+            <a href="#tour" class="scroll-link btn">explore tours</a>
+        </div>
+    </div>
     </header>
 
-    <main>
-
-        <!-- Home page section start -->
-    <section class="home-page" id="Home">
-            <h2 class="title">MotherMade</h2>
-            <p class="slogan">Have some more!</p>
-            <p class="about">
-                Lorem ipsum dolor sit amet consectetur, 
-                adipisicing elit. Nisi quos quasi voluptatibus,
-                eum est ipsam natus expedita suscipit, 
-                debitis dolorum facere ab nihil repellat assumenda nesciunt eius blanditiis, 
-                excepturi at?
+ <main> 
+    <!-- ////about start//// -->
+    <section class="about-page" id="about">
+        <div class="about-title">
+            <h2>about us</h2>
+            <div class="about-us">
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Temporibus perspiciatis autem cumque alias exercitationem obcaecati impedit delectus, 
+                    consequatur rerum saepe, unde laudantium.
+                    Iure consequuntur ratione eaque unde aliquid ab corporis. 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Veritatis, mollitia itaque eius praesentium aliquam at ad doloremque reiciendis sequi possimus unde iste quae deserunt,
+                    porro vitae nemo nostrum libero molestiae.
+                </p>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Ut nisi officia molestias non nostrum laboriosam dicta corporis tempora repudiandae iure,
+                    rem nulla! Nihil voluptate earum rerum repellat ea? Provident, deserunt?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Ipsam ducimus dolores corporis.
+                    Doloremque laboriosam voluptatum reprehenderit perferendis accusamus. 
+                    Eius rem assumenda voluptatibus? Libero iure recusandae aliquid in minima numquam ea?
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- ////about end//// -->
+  <section class="reviews-page" id="reviews">
+    <!-- title -->
+        <div class="review-title">
+            <h2>our reviews</h2>
+        </div>
+        <article class="our-review">
+          <!-- ////reviews//// -->
+            <h4 id="customer">sara johns</h4>
+            <p id="viewed-destination">amsterdam</p>
+            <p id="review">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Rerum alias sed veritatis asperiores debitis necessitatibus officiis illo doloremque nobis. 
+                Odit repudiandae libero, nostrum possimus ducimus sequi ex quibusdam! Corrupti, nobis.
             </p>
-    </section>
-        <!-- Home page section end -->
-
-
-        <!-- Menu Page section start -->
-    <section class="Menu-page" id="Menu">
-          <div class="menu-title">
-                <h4>Our Menu</h4>
-          </div>
-
-            <!-- filter buttons -->
-      <div class="btn-container">
-        <button class="filter-btn btn" type="button" data-id="all">all</button>
-        <button class="filter-btn btn" type="button" data-id="breakfast">breakfast</button>
-        <button class="filter-btn btn" type="button" data-id="lunch">lunch</button>
-        <button class="filter-btn btn" type="button" data-id="shakes">shakes</button>
-      </div>
-
-      <div class="our-menu">
-             <!-- Single item -->
-        <article class="menu-item">
-          <img src="/stuff/javascript-basic-projects-master/08-menu/setup/menu-item.jpeg" class="photo" alt="menu item"/>
-          <div class="item-info">
-           <header class="info">
-              <h4>buttermilk pancakes</h4>
-              <h4>$15</h4>
-              </header>
-              <p class="item-text">
-               Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-               Nulla necessitatibus unde ab porro! Nulla eaque quos necessitatibus saepe minus reiciendis, odit at assumenda, 
-               dicta architecto dolor veritatis esse? Impedit, laboriosam!
-              </p>
-          </div>
-          </article>
-          <!-- end of single item -->
-  
-           <!-- Single item -->
-           <article class="menu-item">
-            <img src="/stuff/javascript-basic-projects-master/08-menu/setup/menu-item.jpeg" class="photo" alt="menu item"/>
-            <div class="item-info">
-             <header class="info">
-                <h4>buttermilk pancakes</h4>
-                <h4>$15</h4>
-                </header>
-                <p class="item-text">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                  Nulla necessitatibus unde ab porro! Nulla eaque quos necessitatibus saepe minus reiciendis, odit at assumenda, 
-                  dicta architecto dolor veritatis esse? Impedit, laboriosam!
-                </p>
+            <!-- ////previous btn//// -->
+            <div class="button-container">
+                <button class="prev-btn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <!-- ////next btn//// -->
+                <button class="next-btn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
             </div>
-          </article>
-          <!-- end of single item -->
-  
-           <!-- Single item -->
-           <article class="menu-item">
-            <img src="/stuff/javascript-basic-projects-master/08-menu/setup/menu-item.jpeg" class="photo" alt="menu item"/>
-            <div class="item-info">
-             <header class="info">
-                <h4>buttermilk pancakes</h4>
-                <h4>$15</h4>
-                </header>
-                <p class="item-text">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                  Nulla necessitatibus unde ab porro! Nulla eaque quos necessitatibus saepe minus reiciendis, odit at assumenda, 
-                  dicta architecto dolor veritatis esse? Impedit, laboriosam!
-                </p>
-            </div>
-          </article>
-          <!-- end of single item -->
-      </div>
+            <!-- ////surprise btn//// -->
+            <button class="random-btn">surprise me</button>
+        </article>
     </section>
-        <!-- Menu Page section end -->
-        <!-- Contact page section start -->
-        <section class="contact-section" id="contact">
-          <h2>Reach us out here</h2>
-          <p>Tell us, how did you like it?</p>
-          <!-- social media-handle -->
-          <div class="links">
-            <a href="#">
-              <i class="fa-brands fa-instagram"></i>
-              Instagram
-            </a>
-            <a href="#">
-              <i class="fa-brands fa-whatsapp"></i>
-              WhatsApp
-            </a>
-          </div>
-        </section>
-        <!-- Contact page section end -->
-    </main>
-    <!-- footer start 
-    <footer>
-      <p>Did you like the above it?</p>
-      <p>Check out more, <a href="https://codepen.io/paras9o9/pens/popular">
-        <i class="fa-brands fa-codepen"></i>
-      </a></p>
-    </footer>
-    <!-- footer end -->
+    <!-- ////our tours start//// -->
+    <section class="our-tour" id="tour">
+        <div class="tour-title">
+            <h2>Our tours</h2>
+        </div>
+        <!-- ////filter btn//// -->
+        <div class="btn-container">
+            <button class="filter-btn" type="button" data-id="all">all</button>
+            <button class="filter-btn" type="button" data-id="somewhere far">somewhere far</button>
+            <button class="filter-btn" type="button" data-id="somewhere near">somewhere near</button>
+            <button class="filter-btn" type="button" data-id="somewhere in center">somewhere in center</button>
+        </div>
+        <!-- ////destinations//// -->
+        <div class="destination-container">
+            <article class="destination">
+                <img src="./assets/amsterdam, netherland.jpg" alt="amsterdam">
+                <div class="destination-info">
+                    <header>
+                        <h4 class="title">amsterdam</h4>
+                        <h4 class="price">326.71</h4>
+                    </header>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Iste magnam eaque ipsam! Quidem iusto, 
+                        assumenda unde ullam mollitia doloribus reprehenderit quasi quisquam ipsa veniam quod quas hic voluptas,
+                        illum fugit.
+                    </p>
+                </div>
+            </article> 
+        </div>
+    </section>
+    <!-- ////our tours end//// -->
+    <!-- ////contact start//// -->
+    <section class="contact-page" id="contact">
+        <div class="contact-title">
+            <h2>contact us</h2>
+        </div>
+        <div class="contact-info">
+            <h4>reach us</h4>
+            <div class="social-links">
+                <a href="#" class="link">
+                    <i class="fa-brands fa-facebook">facebook </i>
+                </a>
+                <a href="#" class="link">
+                    <i class="fa-brands fa-instagram">instagram </i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- ////contact end//// -->
+ </main>   
+ 
+ <footer>
+    <div>
+        <h4>this is a prototype</h4>
+    </div>
+ </footer>
+ <a class="scroll-link top-link" href="#home">
+    <i class="fas fa-arrow-up"></i>
+  </a>
 </body>
-
-
-
-<!-- app.js-->
-<script src="/assignment/mothermade/js/app.js"></script>
-<!-- toolkit.js-->
+<!-- ////app js//// -->
+<script src="./app.js" ></script>
+<!-- ////icon tool kit//// -->
 <script src="https://kit.fontawesome.com/cf1d0f492b.js" crossorigin="anonymous"></script>
-<!-- toggle.js -->
 </html>
